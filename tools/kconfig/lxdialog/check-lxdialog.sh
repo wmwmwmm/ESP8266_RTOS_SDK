@@ -1,9 +1,7 @@
 #!/bin/bash
 # Check ncurses compatibility
-
 # What library to link
-ldflags()
-{
+ldflags(){
 	if [ $(uname -s) == "Darwin" ]; then 
 		#OSX seems to need ncurses too
 		echo -n "-lncurses "
